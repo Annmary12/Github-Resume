@@ -1,0 +1,27 @@
+.homePage {
+  color: var(--default);
+  padding: 2rem 15rem;
+  > h1 {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    display: block;
+    padding-bottom: 2rem;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 5rem;
+  }
+
+  .error {
+    color: red;
+    font-size: 1.2rem;
+  }
+}
