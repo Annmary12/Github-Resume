@@ -1,0 +1,12 @@
+.progress-wrap, .progress-bar {
+    max-width: 300px;
+    height: 5px;
+  }
+  .progress-wrap {
+    background: var(--white-3);
+  }
+  .progress-bar {
+    background: var(--grey-light);
+    width: 0;
+    transition: width 1s;
+  }

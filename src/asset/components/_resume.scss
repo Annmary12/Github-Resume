@@ -27,16 +27,15 @@
   &-language {
     display: flex;
     padding-bottom: 2rem;
-    > span {
+    justify-content: space-between;
+
+    &__item {
+      display: block;
       color: var(--orange);
-      margin-right: 2rem;
+
       > span {
         color: var(--grey);
       }
-    }
-    &__item {
-      display: block;
-      border-bottom: 2px solid var(--grey-light);
     }
   }
 
