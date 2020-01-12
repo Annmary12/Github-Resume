@@ -1,0 +1,16 @@
+.input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--default);
+
+    &:focus {
+     box-shadow: 4px 0.5px 6px var(--default);
+    }
+
+    &::placeholder {
+        color: transparentize(gray, 0.7);
+    }
+}
