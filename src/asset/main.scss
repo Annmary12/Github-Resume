@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+@import './base';
+
+// abstracts
+@import './abstract/variables';
+@import './abstract/animation';
+
+// components
+@import './components/input';
+@import './components//button';
+@import './components/resume';
+
+// pages
+@import './generateResume';
