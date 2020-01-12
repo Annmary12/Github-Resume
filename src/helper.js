@@ -39,7 +39,7 @@ export const getTotalLanguage = (languages) => {
  * @description Sort repo by popularity
  * @param {array} repos
  *
- * returns {arrar}
+ * returns {array}
  */
 export const sortByPopularity = (repos) => {
   let result

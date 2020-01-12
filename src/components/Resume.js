@@ -1,6 +1,9 @@
 import React from 'react'
 import * as moment from 'moment'
 
+// component
+import ProgressBar from './ProgressBar'
+
 // helper
 import { getLangPercent } from '../helper'
 
@@ -18,7 +21,10 @@ const Resume = ({ user, repos, languages, totalLanguague }) => {
       <h3>Languages</h3>
       <div className='resume-language'>
         {languages && Object.keys(languages).map((lang, index) => (
-          <span className='resume-language__item' key={index}>{lang} <span>{getLangPercent(languages[lang], totalLanguague)}%</span></span>
+          <div key={index}>
+            <span className='resume-language__item' key={index}>{lang} <span>{Math.floor(getLangPercent(languages[lang], totalLanguague))}%</span></span>
+            <ProgressBar width={getLangPercent(languages[lang], totalLanguague)} />
+          </div>
         ))}
       </div>
 
