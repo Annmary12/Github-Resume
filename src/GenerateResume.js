@@ -17,6 +17,12 @@ const Home = () => {
   const [languages, setLanguagues] = useState('')
   const [totalLang, setTotalLang] = useState(0)
 
+  /**
+   * @description Handles the onchange input
+   * @param {object} event
+   *
+   * @returns {void}
+   */
   const handleChange = (event) => {
     if (error) {
       setError('')
@@ -24,6 +30,12 @@ const Home = () => {
     setUsername(event.target.value)
   }
 
+  /**
+   * @description Generates Resume
+   * @param {object} event
+   *
+   * @returns {void}
+   */
   const generateResume = async (event) => {
     event.preventDefault()
     setLoading(true)
@@ -43,6 +55,11 @@ const Home = () => {
     }
   }
 
+  /**
+   * @description Get Repositories
+   *
+   * @returns {void}
+   */
   const getRepos = async () => {
     let result
     const url = `${GITHUB_URL}/users/${username}/repos`
@@ -62,6 +79,11 @@ const Home = () => {
     setTotalLang(totalLanguage)
   }
 
+  /**
+   * @description Get Users
+   *
+   * @returns {void}
+   */
   const getUser = async () => {
     const url = `${GITHUB_URL}/users/${username}`
     const response = await fetch(url, {

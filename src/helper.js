@@ -1,3 +1,9 @@
+/**
+ * @description Get languages
+ * @param {array} repos
+ *
+ * @returns {array}
+ */
 export const getLanguages = (repos) => {
   const languages = {}
 
@@ -14,6 +20,12 @@ export const getLanguages = (repos) => {
   return languages
 }
 
+/**
+ * @description Get total langauge
+ * @param {object} languages
+ *
+ * @returns {number}
+ */
 export const getTotalLanguage = (languages) => {
   let totalLanguage = 0
   for (var lang in languages) {
@@ -23,6 +35,12 @@ export const getTotalLanguage = (languages) => {
   return totalLanguage
 }
 
+/**
+ * @description Sort repo by popularity
+ * @param {array} repos
+ *
+ * returns {arrar}
+ */
 export const sortByPopularity = (repos) => {
   let result
 
@@ -38,6 +56,13 @@ export const sortByPopularity = (repos) => {
   return result
 }
 
+/**
+ * @description Gets Language Percentage
+ * @param {number} number
+ * @param {number} totalLanguague
+ * 
+ * @returns {number}
+ */
 export const getLangPercent = (number, totalLanguague) => {
   return (number / totalLanguague) * 100
 }
